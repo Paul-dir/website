@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 20px;
+        }
+        .about, .services, .faq {
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        .services ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .services ul li {
+            padding: 10px;
+            background-color: #f1f1f1;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .faq p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input, .contact-form textarea, .contact-form button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Media Queries for Mobile Devices */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Our Information Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a leading provider of technology solutions, specializing in custom software development, consulting, and IT support. Our mission is to help businesses achieve their goals through the use of innovative and reliable technology solutions.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li><strong>Software Development:</strong> Custom applications designed to meet your business needs.</li>
+            <li><strong>IT Support:</strong> Round-the-clock support for your tech infrastructure.</li>
+            <li><strong>Consulting:</strong> Strategic advice to help optimize your technology investments.</li>
+            <li><strong>Cloud Solutions:</strong> Scalable cloud infrastructure for your business.</li>
+        </ul>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div>
+            <p><strong>Q: What is your pricing model?</strong></p>
+            <p>A: We offer both project-based and hourly billing options depending on your needs.</p>
+        </div>
+        <div>
+            <p><strong>Q: How long does it take to complete a project?</strong></p>
+            <p>A: The timeline varies depending on the complexity of the project. Generally, projects take between 4 to 12 weeks.</p>
+        </div>
+        <div>
+            <p><strong>Q: Do you offer ongoing support?</strong></p>
+            <p>A: Yes, we offer maintenance and support packages to ensure your systems are always running smoothly.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Information Website. All rights reserved.</p>
+        <p>Follow us on social media: <a href="#" style="color:white;">Facebook</a> | <a href="#" style="color:white;">Twitter</a> | <a href="#" style="color:white;">LinkedIn</a></p>
+    </footer>
+
+    <!-- JavaScript for Form Handling -->
+    <script>
+        // Handle the form submission
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent page reload on form submit
+            alert("Thank you for contacting us! We'll get back to you soon.");
+        });
+    </script>
+
+</body>
+</html>
